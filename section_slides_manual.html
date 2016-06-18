@@ -32,7 +32,37 @@
 </head>
 <body>
 
+
+    <!-====START stretchy navigation here========--->
+
+    <header>
+	<nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			Menu
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="#0" class="active"><span>Home</span></a></li>
+			<li><a href="#0"><span>Portfolio</span></a></li>
+			<li><a href="#0"><span>Services</span></a></li>
+			<li><a href="#0"><span>Store</span></a></li>
+			<li><a href="#0"><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+</header>
+
+
+
+    <!-====END stretchy navigation here========--->
+
     <div style="position:fixed; z-index: 1000;">
+        <a href="#a">Link A</a>
+        <a href="#b">Link B</a>
+        <a href="#c">Link C</a>
+        <a href="#d">Link D</a>
         Stick this content
     </div>
 
@@ -72,20 +102,29 @@
 					</style>
 					<div id="pinContainer">
 						<div id="slideContainer">
-							<section class="panel blue">
+							<section id="a" class="panel blue">
 								<b>ONE</b>
 							</section>
-							<section class="panel turqoise" style="background-color:red">
+							<section id= "b" class="panel turqoise" style="background-color:red">
 								<b>TWO</b>
 							</section>
-							<section class="panel green">
+							<section id="c" class="panel green">
 								<b>THREE</b>
+
+                                <h1>This seems to be awesome for sure</h1>
 							</section>
-							<section class="panel bordeaux">
+							<section id = "d" class="panel bordeaux">
 								<b>FOUR</b>
 							</section>
 						</div>
 					</div>
+                    <section>
+                        how about this
+
+
+                    </section>
+
+                    <!--START slide animation on scroll-->
 					<script>
 						$(function () { // wait for document ready
 							// init
@@ -118,6 +157,9 @@
 								.addTo(controller);
 						});
 					</script>
+                    <!----END animation on scroll----->
+
+
 				</section>
 			</div>
 		</div>
